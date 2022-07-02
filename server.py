@@ -7,7 +7,7 @@ from boundary import boundary
 app = Flask(__name__)
 
 @app.route("/")
-def hello_world():
+def home_dir():
   if request.method == 'GET':
     return boundary()
 

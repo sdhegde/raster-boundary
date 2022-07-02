@@ -19,7 +19,8 @@ def boundary():
       features.append(Feature(geometry=geom))
 
   feature_collection = FeatureCollection(features)
-  with open('output.geojson', 'w') as f:
-    dump(feature_collection, f)
+  #Write to local disk
+  #with open('output.geojson', 'w') as f:
+  #  dump(feature_collection, f)
   
   return dumps(feature_collection, sort_keys=True)
